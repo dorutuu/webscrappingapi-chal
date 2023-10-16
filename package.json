@@ -1,0 +1,27 @@
+{
+  "name": "webscrappingproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "module": "type",
+  "dependencies": {
+    "@xmldom/xmldom": "^0.8.10",
+    "axios": "^1.5.1",
+    "body-parser": "^1.20.2",
+    "cheerio": "^1.0.0-rc.12",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1",
+    "puppeteer": "^21.3.8",
+    "scrape-it": "^6.0.1",
+    "tesseract.js": "^5.0.2",
+    "website-scraper": "^5.3.1",
+    "xpath": "^0.0.33"
+  }
+}

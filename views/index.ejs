@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="scraper.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      function handleClik(checkbox) {
+        const form = document.getElementById("uploadForm");
+
+        if (checkbox.checked) {
+          form.action = "/scrapeimage";
+          console.log("changed to scraping images");
+        } else {
+          form.action = "/scrape";
+        }
+      }
+    </script>
+    <title>Web Scraper</title>
+  </head>
+  <body>
+    <h1 class="text-3xl font-bold text-center p-4">Web Scraper</h1>
+    <form
+      id="uploadForm"
+      class="text-center flex-col space-y-2"
+      action="/scrape"
+      method="post"
+    >
+      <label class="text-xs font-bold" for="url">Paste an URL:</label>
+      <input
+        class="w-96 px-2 py-1 border border-gray-200 rounded"
+        type="url"
+        id="url"
+        name="url"
+        required
+      />
+      <input type="checkbox" onchange="handleClik(this)" id="imageURL" />
+      <label for="imageURL"> I have an image URL</label>
+      <hr class="p-4" />
+      <button class="w-96 py-1 bg-gray-800 text-white rounded" type="submit">
+        Scrape it!
+      </button>
+      
+      <hr class="p-4" />
+    </form>
+    
+    
+    <pre>
+      <div class="py-px text-xl justify-center flex">Results will be displayed down here</div>
+            <div class="json-box w-100
+            h-300
+            border-solid
+            border-width-1
+            border-color-black
+            p-4
+            m-4 flex flex-col overflow-auto border border-gray-300 padding padding-4 text-gray-700 pre json">
+            <% if (!textFromImage) { %>
+              <%= jsonData %>
+            <% } else { %>
+              <%= textFromImage %>
+            <% } %>
+                
+            </div>
+            
+        </pre>
+  </body>
+</html>
