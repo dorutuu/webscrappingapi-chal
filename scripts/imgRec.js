@@ -6,17 +6,10 @@ async function scrapeImage(url) {
   await T.recognize(url, "eng", { logger: (e) => console.log(e) }).then(
     ({ data: { text } }) => {
       textData = text;
-      console.log('intra aici');
-      
     }
   );
 
-  
-
-
-  return textData
+  return textData;
 }
 
-module.exports = scrapeImage
-
-
+module.exports = scrapeImage;
