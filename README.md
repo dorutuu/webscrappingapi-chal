@@ -42,5 +42,32 @@ Even if pupeteer solved the problem that I talked about in the first paragraph, 
 
 
 
+## Conclusion
+
+Overall was a great learning experience. Also a web part I haven't tackled yet (so that was exciting to do). The code can be 100% improved and I look forward to the feedback on how to do that.
+
+Therefore exciting to learn more and hopefully to share the journey with you guys from WebScrapping Api
+
+
+
+
+
+
+
+
+## Some Imgur links for testing the Image Scraping
+
+
+https://i.imgur.com/BaXTyhC.jpeg
+
+
+https://i.imgur.com/ZPPki0x.png
+
+
+https://i.imgur.com/bx7vMyv.jpeg
+
+
+
+
 
 
