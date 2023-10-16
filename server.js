@@ -1,13 +1,13 @@
 const express = require("express");
 const app = express();
 const port = 3000;
-const scrape = require("./routes/scraper");
+const scrape = require("./scripts/scraper");
 const bodyParser = require("body-parser");
 const cheerio = require("cheerio");
 const ejs = require("ejs");
-const scrapeImage = require("./imgRec");
-const sentimentArray = require("./sentimentAnalysis");
-const countWordsMultiple = require("./countWords");
+const scrapeImage = require("./scripts/imgRec");
+const sentimentArray = require("./scripts/sentimentAnalysis");
+const countWordsMultiple = require("./scripts/countWords");
 
 app.use(bodyParser.json());
 
